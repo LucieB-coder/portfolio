@@ -1,33 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 27, 24, 26;
+  --color-primary: 255, 45, 172;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background:
+    rgb(var(--background-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+h2 {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ff57bd, 0 0 15px #ff57bd, 0 0 20px #ff57bd, 0 0 40px #ff57bd, 0 0 60px #ff2dac, 0 0 10px #ff57bd, 0 0 98px #ff2dac;
+  color: #ffd5ee;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ff57bd, 0 0 15px #ff57bd, 0 0 20px #ff57bd, 0 0 40px #ff57bd, 0 0 60px #ff2dac, 0 0 10px #ff57bd, 0 0 98px #ff2dac;
+    color: #ffd5ee;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ff57bd, 0 0 15px #ff57bd, 0 0 20px #ff57bd, 0 0 40px #ff57bd, 0 0 60px #ff2dac, 0 0 10px #ff57bd, 0 0 98px #ff2dac;
+    color: #ffd5ee;
   }
 }
