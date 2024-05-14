@@ -1,6 +1,6 @@
 const NameAndStatus = () => {
     return (
-        <div className="h-fit py-12 md:16 lg:24 xl:py-32 flex flex-1 flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="h-fit py-12 md:py-16 lg:py-24 xl:py-32 flex flex-1 flex-col items-center justify-center overflow-hidden rounded-md">
             <h2 className="font-WindSong text-2xl lg:text-4xl xl:text-6xl font-bold text-center">Lucie Bedouret</h2>
             <h1 className="text-xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-center text-white relative px-5">
                 DÉVELOPPEUSE WEB <span className="text-primary-500">&</span>{" "}MOBILE

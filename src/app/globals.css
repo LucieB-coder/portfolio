@@ -10,11 +10,6 @@
   --color-primary: 255, 45, 172;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background:
-    rgb(var(--background-rgb));
-}
 
 @layer utilities {
   .text-balance {
