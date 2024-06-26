@@ -10,7 +10,7 @@ steps:
   - name: docker-build-and-push
     image: plugins/docker
     settings:
-       dockerfile: docker/Dockerfile
+       dockerfile: Dockerfile
        context: .
        registry: hub.codefirst.iut.uca.fr
        mirror: https://proxy.iut.uca.fr:8443
