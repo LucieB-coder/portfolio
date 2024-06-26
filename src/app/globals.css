@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;1,7..72,300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,15 +17,6 @@
   }
 }
 
-h2 {
-  font-size: calc(20px + 18vh);
-  line-height: calc(20px + 20vh);
-  text-shadow: 0 0 5px #ff57bd, 0 0 15px #ff57bd, 0 0 20px #ff57bd, 0 0 40px #ff57bd, 0 0 60px #ff2dac, 0 0 10px #ff57bd, 0 0 98px #ff2dac;
-  color: #ffd5ee;
-  text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-}
 
 @-webkit-keyframes blink {
 
