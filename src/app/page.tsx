@@ -1,7 +1,6 @@
-import ChessFooter from "./components/ChessFooter";
 import Main from "./components/Main";
 import me from "./assets/me.jpg";
-import Image from 'next/image';
+import Image from "next/image";
 import Skills from "./components/Skills";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
       <div className="bg-background-800">
         <div className="px-5 md:px-12 lg:px-26 xl:px-32">
           <div className="flex flex-col md:flex-row rounded-3xl p-12 space-y-12 md:space-x-12 justify-center items-center md:py-32">
-            <p className="flex flex-auto text-md md:text-lg text-center md:text-start">Bonjour et bienvenue sur mon portfolio ! Je suis développeuse full stack avec une expertise particulière en ReactJS et React Native. Actuellement en alternance, je partage mon temps entre l'entreprise BECOMS et l'IUT Informatique de Clermont-Auvergne, où je suis en dernière année de BUT Informatique. Passionnée par la technologie, je suis constamment à la recherche de nouvelles connaissances et de moyens d'améliorer mes compétences. Mon dynamisme et ma curiosité me poussent à explorer de nouveaux horizons et à relever des défis passionnants.</p>
+            <p className="flex flex-auto text-md md:text-lg text-center md:text-start">{"Bonjour et bienvenue sur mon portfolio ! Je suis développeuse full stack avec une expertise particulière en ReactJS et React Native. Actuellement en alternance, je partage mon temps entre l'entreprise BECOMS et l'IUT Informatique de Clermont-Auvergne, où je suis en dernière année de BUT Informatique. Passionnée par la technologie, je suis constamment à la recherche de nouvelles connaissances et de moyens d'améliorer mes compétences. Mon dynamisme et ma curiosité me poussent à explorer de nouveaux horizons et à relever des défis passionnants."}</p>
             <div className="h-64 xl:h-72 aspect-square bg-primary-600 rounded-3xl" >
               <Image className="object-cover overflow-hidden h-64 xl:h-72 bg-primary-600 rounded-3xl" src={me} alt="me" />
             </div>

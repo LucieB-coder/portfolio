@@ -1,16 +1,16 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/image";
 import me from "../assets/me.jpg";
 import skillsImage from "../assets/skills.png";
 import resumeImage from "../assets/resume.png";
 import projectsImage from "../assets/projects.png";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const Main = () => {
     const [windowSize, setWindowSize] = useState<"sm" | "lg">(window.innerWidth < 768 ? "sm" : "lg");
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
+        window.addEventListener("resize", () => {
             window.innerWidth < 768 ? setWindowSize("sm") : setWindowSize("lg")
         })
     }, [])
