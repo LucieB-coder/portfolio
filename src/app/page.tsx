@@ -1,3 +1,5 @@
+
+"use client";
 import Main from "./components/Main";
 import me from "./assets/me.jpg";
 import Image from "next/image";

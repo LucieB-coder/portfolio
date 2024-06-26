@@ -7,13 +7,24 @@ import projectsImage from "../assets/projects.png";
 import { useEffect, useState } from "react";
 
 const Main = () => {
-    const [windowSize, setWindowSize] = useState<"sm" | "lg">(window.innerWidth < 768 ? "sm" : "lg");
+    const [windowSize, setWindowSize] = useState<"sm" | "lg">("sm");
 
     useEffect(() => {
-        window.addEventListener("resize", () => {
-            window.innerWidth < 768 ? setWindowSize("sm") : setWindowSize("lg")
-        })
-    }, [])
+        // Check if window is defined (client-side)
+        const updateWindowSize = () => {
+            setWindowSize(window.innerWidth < 768 ? "sm" : "lg");
+        };
+
+        if (typeof window !== 'undefined') {
+            updateWindowSize(); // Set initial size
+            window.addEventListener('resize', updateWindowSize);
+
+            // Cleanup event listener on component unmount
+            return () => {
+                window.removeEventListener('resize', updateWindowSize);
+            };
+        }
+    }, []);
 
     return (
         <div className="flex flex-1 flex-col items-center pt-8 px-8">
