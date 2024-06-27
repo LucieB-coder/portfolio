@@ -1,19 +1,26 @@
+# Use a Node.js base image
 FROM node:latest
 
-WORKDIR /src
+# Create app directory
+WORKDIR /src/app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
 # Install dependencies
-COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the application code
+# Copy all source files
 COPY . .
 
-# Build the Next.js application
+# Build the app
 RUN npm run build
 
-# Expose the port the app runs on
+# Install serve globally to serve the production build
+RUN npm install -g serve
+
+# Expose the port
 EXPOSE 8080
 
-# Start NGINX
-CMD ["npm", "run", "preview"]
+# Set the command to run the app using serve
+CMD ["serve", "-s", "build", "-l", "8080"]
