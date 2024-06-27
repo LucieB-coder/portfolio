@@ -19,8 +19,8 @@ RUN npm run build
 # Install serve globally to serve the production build
 RUN npm install -g serve
 
-# Serve the build directory on port 8080
-CMD ["serve", "-s", "dist", "-l", "8080", "--mime-type", "application/javascript"]
-
 # Expose the port
 EXPOSE 8080
+
+# Set the command to run the app using serve
+CMD ["serve", "-s", "build", "-l", "8080"]
