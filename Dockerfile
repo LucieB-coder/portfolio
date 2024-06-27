@@ -15,7 +15,6 @@ COPY . .
 
 # Build the app
 RUN npm run build
-RUN ls /build/assets
 
 # Install serve globally to serve the production build
 RUN npm install -g serve
