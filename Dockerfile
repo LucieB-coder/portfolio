@@ -9,6 +9,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Copy all source files
+COPY . .
+
 # Build the app
 RUN npm run build
 
