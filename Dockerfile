@@ -19,7 +19,7 @@ RUN npm run build
 RUN npm install -g serve
 
 # Serve the build directory on port 8080
-CMD ["serve", "-s", "build", "-l", "8080"]
+CMD ["npm", "run", "preview"]
 
 # Expose the port
 EXPOSE 8080
