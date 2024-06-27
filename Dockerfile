@@ -21,7 +21,7 @@ COPY --from=builder /src/app/.next /usr/share/nginx/html/.next
 COPY --from=builder /src/app/public /usr/share/nginx/html
 
 # Copy the NGINX configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose the port the app runs on
 EXPOSE 80
