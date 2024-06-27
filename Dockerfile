@@ -1,7 +1,7 @@
 
 FROM node:latest
 
-WORKDIR /src/app
+WORKDIR .
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
