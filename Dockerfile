@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /my-portfolio/src
+WORKDIR /src
 
 # Install dependencies
 COPY package*.json ./
