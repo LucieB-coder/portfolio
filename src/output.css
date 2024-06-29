@@ -1010,6 +1010,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .bg-primary-600{
   --tw-bg-opacity: 1;
   background-color: rgb(204 36 138 / var(--tw-bg-opacity));
@@ -1093,6 +1098,10 @@ video {
 
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .pt-10{
@@ -1234,9 +1243,9 @@ body {
     padding-right: 2rem;
   }
 
-  .md\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  .md\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .md\:pb-32{
