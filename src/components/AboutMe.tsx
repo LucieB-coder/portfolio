@@ -23,7 +23,7 @@ const AboutMe = () => {
                             <button className="p-[3px] relative flex flex-wrap">
                                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-300 rounded-lg" />
                                 <div className="px-3 md:px-8 py-2 bg-background-500 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-                                    <p className="text-sm md:text-lg font-semibold">{"Venez m'affronter aux échecs !"}</p>
+                                    <p className="text-sm md:text-lg font-semibold">{"Come face me in chess"}</p>
                                 </div>
                             </button>
                         </a>
