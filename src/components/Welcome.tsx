@@ -45,11 +45,11 @@ const Welcome = () => {
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                             <p className="absolute top-5 left-5 font-bold lg:text-2xl">PROJECTS</p>
                         </div>
-                        <div className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
+                        <a href="#skills" className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
                             <img className="object-cover overflow-hidden" src={skillsImage} alt="skills" />
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                             <p className="absolute top-5 left-5 text-background-500 font-bold lg:text-2xl">SKILLS</p>
-                        </div>
+                        </a>
                         <a href="#resum" className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
                             <img className="object-cover overflow-hidden" src={resumeImage} alt="skills" />
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
@@ -77,11 +77,11 @@ const Welcome = () => {
                                     <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                                     <p className="absolute top-5 left-5 font-bold lg:text-2xl">PROJECTS</p>
                                 </div>
-                                <div className="relative flex flex-none rounded-3xl overflow-hidden" >
+                                <a href="#skills" className="relative flex flex-none rounded-3xl overflow-hidden" >
                                     <img className="absolute w-full h-full object-cover object-center overflow-hidden" src={skillsImage} alt="skills" />
                                     <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                                     <p className="absolute top-5 left-5 text-background-500 font-bold lg:text-2xl">SKILLS</p>
-                                </div>
+                                </a>
                                 <a href="#resume" className="relative flex flex-none rounded-3xl overflow-hidden" >
                                     <img className="absolute w-full h-full object-cover object-center overflow-hidden" src={resumeImage} alt="skills" />
                                     <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />

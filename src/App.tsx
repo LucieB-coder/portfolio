@@ -1,5 +1,6 @@
 import AboutMe from "./components/AboutMe.tsx";
 import Resume from "./components/Resume.tsx";
+import Skills from "./components/Skills.tsx";
 import Welcome from "./components/Welcome.tsx";
 // import Skills from "./components/Skills";
 
@@ -11,6 +12,9 @@ export default function Home() {
       </div>
       <div id="aboutMe">
         <AboutMe />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
       <div id="resume">
         <Resume />
