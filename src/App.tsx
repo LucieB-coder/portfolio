@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe.tsx";
+import Projects from "./components/Projects.tsx";
 import Resume from "./components/Resume.tsx";
 import Skills from "./components/Skills.tsx";
 import Welcome from "./components/Welcome.tsx";
@@ -12,6 +13,9 @@ export default function Home() {
       </div>
       <div id="aboutMe">
         <AboutMe />
+      </div>
+      <div id="projects">
+        <Projects />
       </div>
       <div id="skills">
         <Skills />

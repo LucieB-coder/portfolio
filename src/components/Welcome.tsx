@@ -40,11 +40,11 @@ const Welcome = () => {
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                             <p className="absolute top-5 left-5 text-background-500 font-bold lg:text-2xl">ABOUT ME</p>
                         </a>
-                        <div className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
+                        <a href="#projects" className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
                             <img className="object-cover overflow-hidden" src={projectsImage} alt="projects" />
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                             <p className="absolute top-5 left-5 font-bold lg:text-2xl">PROJECTS</p>
-                        </div>
+                        </a>
                         <a href="#skills" className="relative flex flex-1 rounded-3xl overflow-hidden aspect-square" >
                             <img className="object-cover overflow-hidden" src={skillsImage} alt="skills" />
                             <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
@@ -72,11 +72,11 @@ const Welcome = () => {
                                 <p className="absolute top-5 left-5 text-background-500 font-bold lg:text-2xl">ABOUT ME</p>
                             </a>
                             <div className="col-span-2 grid grid-cols-2 gap-4 h-full">
-                                <div className="col-span-2 relative flex flex-1 h-full w-full rounded-3xl overflow-hidden" >
+                                <a href="#projects" className="col-span-2 relative flex flex-1 h-full w-full rounded-3xl overflow-hidden" >
                                     <img className="absolute w-full object-contain object-center overflow-hidden" src={projectsImage} alt="projects" />
                                     <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />
                                     <p className="absolute top-5 left-5 font-bold lg:text-2xl">PROJECTS</p>
-                                </div>
+                                </a>
                                 <a href="#skills" className="relative flex flex-none rounded-3xl overflow-hidden" >
                                     <img className="absolute w-full h-full object-cover object-center overflow-hidden" src={skillsImage} alt="skills" />
                                     <div className="absolute w-full h-full bg-black opacity-25 hover:bg-transparent" />

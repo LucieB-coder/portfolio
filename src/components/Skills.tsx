@@ -22,13 +22,14 @@ const Skills = () => {
             };
         }
     }, []);
+
     return (
         <div className="flex flex-1 flex-col items-center min-h-screen space-y-12 px-5 py-12 bg-background-900">
             <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">My skills</h3>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-9xl mx-auto w-full">
                 <div className="flex flex-col space-y-5 rounded-3xl bg-background-600 col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] p-5">
                     <p className="flex font-Literata tracking-widest text-2xl md:text-3xl text-start">Main technical stack</p>
-                    <div className="flex flex-row flex-auto justify-center items-center px-3 space-x-8 md:px-24">
+                    <div className="flex flex-row flex-auto justify-center items-center px-3 space-x-8 md:px-12">
                         <p className="lg:text-xl">During my work-study program at BECOMS, I worked on both websites and mobile apps. To do so, I used the ReactJS framework (or React Native for mobile apps), combined with a Node.js server and an API in Express.js, with data hosted on a MongoDB database.</p>
                         {windowSize === "lg" && (
                             <img className="h-72 aspect-square" src={mainStack} ></img>
@@ -50,9 +51,9 @@ const Skills = () => {
 
                 <div className="flex flex-col space-y-5 rounded-3xl bg-background-800 col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] p-5">
                     <p className="flex font-Literata tracking-widest text-2xl md:text-3xl text-start">Supplementary technical skills</p>
-                    <div className="flex flex-row flex-auto justify-center items-center px-3 space-x-8 md:px-24">
+                    <div className="flex flex-row flex-auto justify-center items-center px-3 space-x-8 md:px-12">
                         {windowSize === "lg" && (
-                            <img className="h-64" src={otherTechnos}></img>
+                            <img className="md:w-40 lg:w-52 xl:w-80" src={otherTechnos}></img>
                         )}
                         <p className="lg:text-xl">Through personal projects and university evaluations, I've gained a wide range of skills such as SwiftUI development, machine learning, deep learning, .NET development, Unity's environment, algorithm design, testing, embedded development, Docker, graph and mathematical theory, code optimization, and more.</p>
                     </div>
