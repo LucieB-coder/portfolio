@@ -28,7 +28,7 @@ const Welcome = () => {
         <>
             {windowSize === "sm" ? (
                 <div className="flex flex-col items-center pt-8 px-8">
-                    <div className="flex flex-1 w-full items-start"><p className="lg:text-xl font-bold opacity-80">CONTACT</p></div>
+                    <a href="#contact" className="flex flex-1 w-full items-start"><p className="lg:text-xl font-bold opacity-80">CONTACT</p></a>
                     <div className="flex flex-col items-center space-y-4 pt-10 md:p-24 lg:p-10 xl:pb-8 xl:pt-0 xl:px-0">
                         <h1 className="flex font-Literata tracking-widest text-5xl md:text-7xl  lg:text-8xl xl:text-[8rem] text-center">LUCIE BEDOURET</h1>
                         <p className="tracking-widest opacity-80">~ FULL STACK DEVELOPER ~</p>
@@ -59,7 +59,7 @@ const Welcome = () => {
                 </div>
             ) : (
                 <div className="flex flex-col min-h-screen max-h-screen items-center justify-between py-8 px-8">
-                    <div className="flex w-full items-start"><p className="lg:text-xl font-bold opacity-80">CONTACT</p></div>
+                    <a href="#contact" className="flex w-full items-start"><p className="lg:text-xl font-bold opacity-80">CONTACT</p></a>
                     <div className="flex flex-1 flex-col items-center justify-center space-y-2">
                         <h1 className="flex font-Literata tracking-widest text-7xl lg:text-8xl xl:text-[8rem] text-center">LUCIE BEDOURET</h1>
                         <p className="tracking-widest opacity-80">~ FULL STACK DEVELOPER ~</p>
