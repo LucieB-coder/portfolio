@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;1,7..72,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-primary-100: oklch(0.9158 0.0568 341.82);
+  --color-primary-200: oklch(0.8375 0.1167 342.81);
+  --color-primary-300: oklch(0.7679 0.1748 344.88);
+  --color-primary-400: oklch(0.712 0.2256 346.95);
+  --color-primary-500: oklch(0.6736 0.2586 350.06);
+  --color-primary-600: oklch(0.5711 0.2175 349.69);
+  --color-primary-700: oklch(0.4634 0.1738 349.6);
+  --color-primary-800: oklch(0.3497 0.1272 348.73);
+  --color-primary-900: oklch(0.2263 0.074 347.99);
+
+
+
+  --color-background-100: oklch(0.8607 0 0);
+  --color-background-200: oklch(0.7163 0.0012 17.19);
+  --color-background-300: oklch(0.5614 0.0039 325.63);
+  --color-background-400: oklch(0.3978 0.0052 337.53);
+  --color-background-500: oklch(0.2133 0.0061 337.83);
+  --color-background-600: oklch(0.1912 0.0062 337.91);
+  --color-background-700: oklch(0.1671 0.0053 325.81);
+  --color-background-800: oklch(0.146 0.0017 17.35);
+  --color-background-900: oklch(0.1149 0 0);
+
+  --font-Literata: "Literata", serif;
+
+}
+
+
+html,
+body {
+  @apply bg-background-300 dark:bg-background-500 text-[#DDECFB];
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+
+
+}

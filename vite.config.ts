@@ -1,12 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { reactRouter } from "@react-router/dev/vite";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: 'build', // Output directory for production build
-    assetsDir: 'assets', // Directory for static assets like JS and CSS
-    sourcemap: true, // Enable sourcemaps for debugging
-  },
-})
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+});

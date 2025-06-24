@@ -1,25 +1,22 @@
-
-FROM node:latest
-
+FROM node:20-alpine AS development-dependencies-env
+COPY . /app
 WORKDIR /app
+RUN npm ci
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+FROM node:20-alpine AS production-dependencies-env
+COPY ./package.json package-lock.json /app/
+WORKDIR /app
+RUN npm ci --omit=dev
 
-# Install dependencies
-RUN npm install
+FROM node:20-alpine AS build-env
+COPY . /app/
+COPY --from=development-dependencies-env /app/node_modules /app/node_modules
+WORKDIR /app
+RUN npm run build
 
-# Copy all source files
-COPY . .
-
-# Build the app
-RUN npm run build -- --base=/containers/luciebedouret-portfolio/
-
-# Install serve globally to serve the production build
-RUN npm install -g serve
-
-# Serve the build directory on port 8080
-CMD ["serve", "-s", "build", "-l", "8080"]
-
-# Expose the port
-EXPOSE 8080
+FROM node:20-alpine
+COPY ./package.json package-lock.json /app/
+COPY --from=production-dependencies-env /app/node_modules /app/node_modules
+COPY --from=build-env /app/build /app/build
+WORKDIR /app
+CMD ["npm", "run", "start"]
