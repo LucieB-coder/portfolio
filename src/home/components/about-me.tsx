@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import chessDotComLogo from "../../assets/images/chess-dot-com-logo.png";
 import filsPhoto from "../../assets/images/fils.jpg";
 import lightWeightBaby from "../../assets/images/lightWeightBaby.jpg";
@@ -33,7 +32,7 @@ export default function AboutMe() {
 
                     <div className="flex flex-col md:flex-row space-y-5 md:space-x-10 justify-center items-center">
                         <p className="flex flex-auto text-md  bg-ink-200 md:text-lg text-center md:text-start">{"Outside of my interests in development and current technologies, I have many hobbies. I love to read, play video games (I am a huge fan of the Diablo series), and I am very curious about anything related to astrophysics. I also love plants, and much more. For the past year, I’ve been teaching myself to play chess. There is still a long road ahead, but I am slowly becoming a challenging opponent. If you dare, click on the button and confront me for a game on Chess.com!"}</p>
-                        <Link to="https://www.chess.com/member/lulu-la-tortue" className="flex flex-none flex-no-wrap items-center space-x-3">
+                        <a href="https://www.chess.com/member/lulu-la-tortue" className="flex flex-none flex-no-wrap items-center space-x-3">
                             <img className="h-10 object-contain" src={chessDotComLogo} alt="chessdotcomlogo" />
                             <button type="button" className="p-[3px] relative flex flex-wrap cursor-pointer">
                                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-300 rounded-lg" />
@@ -41,7 +40,7 @@ export default function AboutMe() {
                                     <p className="text-sm md:text-lg font-semibold">{"Come face me in chess"}</p>
                                 </div>
                             </button>
-                        </Link>
+                        </a>
                     </div>
                     <div className="flex flex-col md:flex-row space-y-5 md:space-x-10 justify-center items-center">
                         <div className="h-64 xl:h-72 aspect-square bg-primary-600 rounded-3xl" >
