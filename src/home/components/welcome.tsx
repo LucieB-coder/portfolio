@@ -17,8 +17,8 @@ export function MobileWelcome() {
     <div className="flex lg:hidden flex-1 flex-col items-center py-8 min-h-screen">
       <p className="pb-3 flex font-Literata tracking-widest text-5xl text-center text-nowrap">LUCIE B.</p>
 
-      <div className="flex flex-auto flex-col space-y-5 px-8 max-h-3/4 max-w-lg">
-        <div className="relative flex flex-1 m" >
+      <div className="flex flex-auto flex-col space-y-5 px-8 max-w-lg pb-20">
+        <div className="relative flex flex-1" >
           <img className="object-cover overflow-hidden" src={me} alt="me" />
           <div className="absolute w-full h-full bg-black opacity-25" />
         </div>

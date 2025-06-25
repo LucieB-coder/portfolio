@@ -74,7 +74,7 @@ export function Projects() {
 
 function Card({ project }: { project: Project }) {
     return (
-        <div className="snap-center h-[500px] aspect-[3/5] lg:aspect-[4/5] rounded-xl overflow-hidden relative bg-background-300">
+        <div className="snap-center h-[500px] aspect-[2.2/5] lg:aspect-[4/5] rounded-xl overflow-hidden relative bg-background-300">
             {project.imgSource !== "" &&
                 <img src={project.imgSource} className="h-full object-cover w-full" />}
             <div className="absolute top-0 h-full w-full flex flex-col space-y-3 bg-black/60 p-6">

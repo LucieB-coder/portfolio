@@ -34,7 +34,7 @@
 
 html,
 body {
-  @apply bg-background-300 dark:bg-background-500 text-[#DDECFB];
+  @apply bg-background-500 dark:bg-background-500 text-[#DDECFB];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
