@@ -4,7 +4,7 @@ export default function Resume() {
     return (
         <div className="flex flex-1 flex-col items-center justify-center space-y-8 min-h-screen py-12">
             <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">Resume</h3>
-            <p className="px-5 text-center">Here is a link to my resume in french, don't hesitate to contact me if you need it in english</p>
+            <p className="px-5 text-center">Here is a link to my resume in english, don't hesitate to contact me if you need it in french</p>
             <a
                 href="/portfolio/CV-Lucie-BEDOURET.pdf"
                 target="_blank"
