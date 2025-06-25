@@ -31,7 +31,7 @@ export function MobileWelcome() {
 export function DesktopWelcome() {
 
   return (
-    <div className="hidden lg:flex w-screen min-h-screen max-h-screen items-center justify-center relative bg-[#DDECFB]">
+    <div className="hidden lg:flex w-screen min-h-screen max-h-screen items-center justify-center relative bg-primary-100">
       <img className="object-cover overflow-hidden h-screen max-w-9xl object-top" src={meNoBg} alt="me" />
       <div className="absolute w-full h-full text-background-400 pt-34 xl:pt-24 items-center justify-center">
         <p className="font-Literata italic text-7xl xl:text-[8rem] flex space-x-56 justify-center pl-34 xl:pl-56"><span>Hey</span> <span>There !</span></p>

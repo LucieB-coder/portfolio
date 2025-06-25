@@ -36,10 +36,10 @@ export default function Skills() {
 
                     </div>
                 </div>
-                <div className="flex flex-col space-y-5 rounded-3xl bg-primary-900 col-span-1 h-full min-h-[300px] p-5">
+                <div className="flex flex-col space-y-5 rounded-3xl bg-[#330922] col-span-1 h-full min-h-[300px] p-5">
                     <p className="flex font-Literata tracking-widest text-2xl md:text-3xl text-start">Soft skills</p>
                     <div className="flex flex-row flex-auto justify-center items-center px-3 space-x-8">
-                        <img className="h-72 object-contain" src={softSkills} ></img>
+                        <img className="h-72 object-contain" src={softSkills}></img>
                     </div>
                 </div>
                 <div className="flex flex-col space-y-5 rounded-3xl bg-background-700 col-span-1 h-full min-h-[300px] p-5">

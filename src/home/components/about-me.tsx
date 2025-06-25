@@ -9,16 +9,16 @@ export default function AboutMe() {
             <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">ABOUT ME</h3>
             <div className="px-5 md:px-12 lg:px-26 xl:px-32">
                 <div className="flex flex-col md:flex-row p-12 space-y-12 md:space-x-12 justify-center items-center md:py-14">
-                    <p className="flex flex-auto text-md md:text-lg text-center md:text-start">{"Hello and welcome to my portfolio! I am Lucie, a full stack developer with specialized expertise in ReactJS and React Native. Currently, I am in a work-study program, balancing my time between BECOMS and the Clermont-Auvergne University Institute of Technology, where I am in my final year of a Bachelor's degree in Computer Science. I have the ability to build both websites and mobile applications. My passion for technology drives me to continually seek new knowledge and enhance my skills. My enthusiasm and curiosity inspire me to explore new horizons and tackle exciting challenges."}</p>
-                    <div className="h-64 xl:h-72 aspect-square bg-primary-600 rounded-3xl" >
-                        <img className="object-cover object-top overflow-hidden h-64 xl:h-72 w-full bg-primary-600 rounded-3xl" src={me} alt="me" />
+                    <p className="flex flex-auto text-md md:text-lg text-center md:text-start">{"Hello and welcome to my portfolio! I am Lucie, a full stack developer with specialized expertise in ReactJS and React Native. Currently, I am currently employed as a full stack developer at BECOMS, working with MERN stack. I have the ability to build both websites and mobile applications. My passion for technology drives me to continually seek new knowledge and enhance my skills. My enthusiasm and curiosity inspire me to explore new horizons and tackle exciting challenges (after my RAG projet, I would like to try the language Golang through another projet, stay tuned)."}</p>
+                    <div className="h-64 xl:h-72 aspect-square bg-primary-300 rounded-3xl" >
+                        <img className="object-cover object-top overflow-hidden h-64 xl:h-72 w-full bg-primary-300 rounded-3xl" src={me} alt="me" />
                     </div>
                 </div>
 
                 <div className="flex flex-col rounded-3xl px-5 space-y-12 justify-center items-center pb-12">
-                    <h5 className="flex font-Literata text-primary-500 tracking-widest text-2xl md:text-3xl lg:text-4xl text-center">What about my personnal interests ?</h5>
+                    <h5 className="flex font-Literata text-primary-300 tracking-widest text-2xl md:text-3xl lg:text-4xl text-center">What about my personal interests ?</h5>
                     <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-10 justify-center items-center">
-                        <div className="h-64 xl:h-72 aspect-square bg-primary-600 rounded-3xl">
+                        <div className="h-64 xl:h-72 aspect-square bg-primary-300 rounded-3xl">
                             <img
                                 className="object-cover aspect-square object-center h-64 xl:h-72 rounded-3xl"
                                 src={lightWeightBaby}
@@ -36,7 +36,7 @@ export default function AboutMe() {
                             <img className="h-10 object-contain" src={chessDotComLogo} alt="chessdotcomlogo" />
                             <button type="button" className="p-[3px] relative flex flex-wrap cursor-pointer">
                                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-300 rounded-lg" />
-                                <div className="px-3 md:px-8 py-2 bg-background-500 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+                                <div className="px-3 md:px-8 py-2 bg-background-500 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:text-background-600">
                                     <p className="text-sm md:text-lg font-semibold">{"Come face me in chess"}</p>
                                 </div>
                             </button>

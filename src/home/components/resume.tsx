@@ -13,7 +13,7 @@ export default function Resume() {
             >
                 <button type="button" className="p-[3px] relative flex flex-wrap cursor-pointer">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-300 rounded-lg" />
-                    <div className="px-3 md:px-8 py-2 bg-background-500 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+                    <div className="px-3 md:px-8 py-2 bg-background-500 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:text-background-600">
                         <p className="text-sm md:text-lg font-semibold">{"View Resume (PDF)"}</p>
                     </div>
                 </button>
