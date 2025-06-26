@@ -8,7 +8,7 @@ export default function Skills() {
       <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">
         My skills
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-9xl mx-auto w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-9xl mx-auto w-full max-w-[1500px]">
         <div className="flex flex-col space-y-5 rounded-3xl bg-background-600 col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] p-5">
           <p className="flex font-Literata tracking-widest text-2xl md:text-3xl text-start">
             Main technical stack
