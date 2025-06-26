@@ -1,7 +1,6 @@
 import chessDotComLogo from "../../assets/images/chess-dot-com-logo.png";
 import filsPhoto from "../../assets/images/fils.jpg";
 import lightWeightBaby from "../../assets/images/lightWeightBaby.jpg";
-import me from "../../assets/images/me.webp";
 
 export default function AboutMe() {
     return (
@@ -9,10 +8,7 @@ export default function AboutMe() {
             <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">ABOUT ME</h3>
             <div className="px-5 md:px-12 lg:px-26 xl:px-32">
                 <div className="flex flex-col md:flex-row p-12 space-y-12 md:space-x-12 justify-center items-center md:py-14">
-                    <p className="flex flex-auto text-md md:text-lg text-center md:text-start">{"Hello and welcome to my portfolio! I am Lucie, a full stack developer with specialized expertise in ReactJS and React Native. Currently, I am currently employed as a full stack developer at BECOMS, working with MERN stack. I have the ability to build both websites and mobile applications. My passion for technology drives me to continually seek new knowledge and enhance my skills. My enthusiasm and curiosity inspire me to explore new horizons and tackle exciting challenges (after my RAG projet, I would like to try the language Golang through another projet, stay tuned)."}</p>
-                    <div className="h-64 xl:h-72 aspect-square bg-primary-300 rounded-3xl" >
-                        <img className="object-cover object-top overflow-hidden h-64 xl:h-72 w-full bg-primary-300 rounded-3xl" src={me} alt="me" />
-                    </div>
+                    <p className="flex flex-auto text-md md:text-lg text-center md:text-start">{"Hello and welcome to my portfolio! I am Lucie, a full stack developer with specialized expertise in ReactJS and React Native. I am currently employed as a full stack developer at BECOMS, working with MERN stack. I have the ability to build both websites and mobile applications. My passion for technology drives me to continually seek new knowledge and enhance my skills. My enthusiasm and curiosity inspire me to explore new horizons and tackle exciting challenges (after my RAG projet, I would like to try the language Golang through another projet, stay tuned)."}</p>
                 </div>
 
                 <div className="flex flex-col rounded-3xl px-5 space-y-12 justify-center items-center pb-12">
@@ -46,7 +42,7 @@ export default function AboutMe() {
                         <div className="h-64 xl:h-72 aspect-square bg-primary-600 rounded-3xl" >
                             <img className="object-cover overflow-hidden h-64 xl:h-72 bg-primary-600 rounded-3xl" src={filsPhoto} alt="fils" />
                         </div>
-                        <p className="flex flex-1 text-md md:text-lg text-center md:text-start">{"However, if I were forced to talk about only one of my hobbies, I would undoubtedly choose my passion for animal welfare. Since childhood, I’ve always been surrounded by pets and fascinated by animals of all kinds. I have a few anecdotes on the matter. For example, I’ve hugged a baby cow, fed a giraffe, and put a huge python around my neck (at the age of 12). I basically pet animals of any kind whenever I have the opportunity. I have a cat named Fils, the silly cat on the photo. Fils is a rescue. He is only one year old but had already been abandoned twice, beaten, and underfed before we got him. Despite this, he is still a lovely boy, and his transformation inspires me every day to make one of my biggest projects a reality. After I conclude some of my personal projects, I will become a volunteer at an animal shelter so that other souls like Fils can find happiness and the comfort of a loving family."}</p>
+                        <p className="flex flex-1 text-md md:text-lg text-center md:text-start">{"However, if I were forced to talk about only one of my hobbies, I would undoubtedly choose my passion for animal welfare. Since childhood, I’ve always been surrounded by pets and fascinated by animals of all kinds. I have a few anecdotes on the matter. For example, I’ve hugged a baby cow, fed a giraffe, and put a huge python around my neck (at the age of 12). I basically pet animals of any kind whenever I have the opportunity. I have a cat named Fils, the silly cat on the photo. Fils is a rescue. He was only one year old but had already been abandoned twice, beaten, and underfed before we got him. Despite this, he is still a lovely boy, and his transformation inspires me every day to make one of my biggest projects a reality. After I conclude some of my personal projects, I will become a volunteer at an animal shelter so that other souls like Fils can find happiness and the comfort of a loving family."}</p>
                     </div>
                 </div>
             </div>

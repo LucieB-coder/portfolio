@@ -11,9 +11,9 @@ export default function App() {
   return (
     <div className='flex flex-col flex-1 overflow-hidden'>
       <Welcome />
-      <Projects />
-      <Skills />
       <AboutMe />
+      <Skills />
+      <Projects />
       <Resume />
       <Contact />
     </div>);
