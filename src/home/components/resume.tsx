@@ -6,7 +6,7 @@ export default function Resume() {
             <h3 className="flex font-Literata tracking-widest text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">Resume</h3>
             <p className="px-5 text-center">Here is a link to my resume in english, don't hesitate to contact me if you need it in french</p>
             <a
-                href="/portfolio/CV-Lucie-BEDOURET.pdf"
+                href="/portfolio/Lucie-BEDOURET-software-developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
 
